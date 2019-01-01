@@ -36,7 +36,7 @@ public class MyActivity extends AppCompatActivity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
 
-        Log.e("MyActivity","yly");
+        Log.e("MyActivity","yly---1");
         titleText=findViewById(R.id.title_text);
         titleText.setText("个人中心");
         LinearLayout book= (LinearLayout) findViewById(R.id.book);
