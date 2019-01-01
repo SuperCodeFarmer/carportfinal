@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c7c3d6">
+    <com.baidu.location.demo.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.baidu.location.demo.TitleLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="车位地址"/>
+        <EditText
+            android:id="@+id/carport_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="出租时长"/>
+        <EditText
+            android:id="@+id/carport_timeout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="租出价位"/>
+        <EditText
+            android:id="@+id/book_cost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#cfcfd2">
+
+        <EditText
+            android:id="@+id/book_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:hint="请详细介绍您的车位"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="#51727b"
+        android:layout_height="140dp">
+        <ImageView
+            android:id="@+id/imageview_l"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="#9c9696"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            >
+        </ImageView>
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/imageview_r"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="#9c9696"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            >
+        </ImageView>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/release_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="我要发布"
+        android:textSize="24sp"
+        android:textColor="#000"
+        />
+
+
+</LinearLayout>
