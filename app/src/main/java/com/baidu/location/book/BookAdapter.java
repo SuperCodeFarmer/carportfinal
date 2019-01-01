@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.baidu.baidulocationdemo.R;
+import com.baidu.location.demo.Carport_Details;
 
 import java.sql.Date;
 import java.text.SimpleDateFormat;
@@ -68,7 +69,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder>{
         holder.carportView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(view.getContext(),BookActivity.class);
+                Intent intent=new Intent(view.getContext(),Carport_Details.class);
                 intent.putExtra("carportAddress",holder.bookCarport_address.getText());
                 intent.putExtra("carportTimeout",holder.bookCarport_timeout.getText());
                 intent.putExtra("carportTime",holder.bookCarport_releasetime.getText());

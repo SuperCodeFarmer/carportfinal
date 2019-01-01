@@ -26,13 +26,15 @@ public class Carport_Details extends AppCompatActivity implements View.OnClickLi
     private ImageView carportImageDetail_2;
     private ImageView carportImageDetail_3;
 
+    private TextView title;
+
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carport__details);
         //标题栏
-        TextView title= (TextView) findViewById(R.id.title_text);
+        title= (TextView) findViewById(R.id.title_text);
         title.setText("订单详情");
 
         carportDetailAddress= (TextView) findViewById(R.id.carport_detail_address);
